@@ -1,0 +1,113 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>タイトルだよ</title>
+    <style type="text/css">
+h1 {
+  border: 1px solid pink;
+  color: green;
+}
+      body {
+        border: 1px solid pink;
+      }
+      p {
+        color: red;
+        font-size: 40px;
+        font-family: sans-serif;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+      }
+      .box1 {
+        background-color: lightblue;
+        position: relative;
+        top: 30px; left: 0px;
+      }
+      .box2 {
+        position: relative;
+        top: -300px; left: 40px;
+        background-color: lightgreen;  
+        border-radius: 50%;
+        text-align: center;
+        margin: auto;
+        border: 2px solid skyblue;
+        padding: 10px;
+      }
+      .box3 {
+        position: absolute;
+        top: 500px; left: 50px;
+        background-color: #81d46b;  
+        border: 2px solid black;
+        border-radius: 10%;
+        text-align: center;
+      }
+      .box4 {
+        position: absolute;
+        top: 600px; left: 150px;
+        background-color: #81d46b;  
+        animation: slidein 3s ease-in 1s infinite reverse both running;
+      }
+
+      .button {
+        background-color: orange;
+        border-radius: 30%;
+        width: 100px;
+        height: 200px;
+      }
+      .polling_message {
+        color: white;
+        float: left;
+        margin-right: 2%;            
+      }
+
+      .view_port {
+        background-color: black;
+        height: 25px;
+        width: 100%;
+        overflow: hidden;
+      }
+
+      .cylon_eye {
+        background-color: red;
+        background-image: linear-gradient(to right,
+          rgba(0, 0, 0, .9) 25%,
+          rgba(0, 0, 0, .1) 50%,
+          rgba(0, 0, 0, .9) 75%);
+        color: white;
+        height: 100%;
+        width: 20%;
+
+        -webkit-animation: 4s linear 0s infinite alternate move_eye;
+        animation: 4s linear 0s infinite alternate move_eye;
+      }
+
+      @-webkit-keyframes move_eye { from { margin-left: -20%; } to { margin-left: 100%; }  }
+      @keyframes move_eye { from { margin-left: -20%; } to { margin-left: 100%; }  }
+
+    </style>
+  </head>
+  <body>
+    <h1>h1です</h1>
+    <p>yeahyeahyeahyeahyeahyeahyeahyeahyeahyeahyeah</p>
+    <form>
+      <label>氏名　<input type="text" name="" value=""></label>
+    </form>
+    <button class="button" type="">ボタンだー</button>
+    <div class="box box1">box1</div>
+    <div class="box box2">box2</div>
+    <div class="box box3">box3</div>
+    <div class="box box4">box4</div>
+    <div class="box box5">box5</div>
+    <div class="box box6">box6</div>
+    <div class="box box7">box7</div>
+    <div class="view_port">
+      <div class="polling_message">
+        Listening for dispatches
+      </div>
+      <div class="cylon_eye"></div>
+    </div>
+
+    <!-- <div class="box box3">box3</div> -->
+  </body>
+</html>
