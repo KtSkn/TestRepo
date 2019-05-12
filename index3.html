@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>タイトルだよ</title>
+    <!-- JQueryの読み込み(CDN) -->
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <style type="text/css">
+      .starting-point{
+          position: relative;
+          width: 300px;
+          height: 300px;
+          background: #e0ebaf;
+          text-align: center;
+      }
+
+      .sample-box{
+          position: absolute;
+          top: 50px;
+          left: 50px;
+          background: #ee827c;
+          /*インライン要素だけど、指定できる*/
+          width: 100px;
+          height: 100px;
+          color: #ffffff;
+      }
+
+      .sample-box2{
+          position: absolute;
+          top: 50px;
+          left: 150px;
+          background: #ee827c;
+          /*インライン要素だけど、指定できる*/
+          width: 100px;
+          height: 100px;
+          color: #ffffff;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="starting-point">
+        <div class="main-box">
+          <span class="sample-box">POSITION</span>
+          <span class="sample-box2">POSITION</span>
+        </div>
+      </div>
+    </div>
+  </body>
+<script>
+  console.log("called js");
+</script>
+
+</html>
+

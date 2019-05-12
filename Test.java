@@ -11,6 +11,11 @@ class Test{
     System.out.println(ans2);
     System.out.println(ans3);
     System.out.println(ans4);
+
+    for (int i=0;i<=10 ;i++ ) {
+      System.out.println("num" + i);
+
+    }
 	}
 }
 
